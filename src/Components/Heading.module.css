@@ -1,12 +1,11 @@
 .head {
-  color: rgb(84, 149, 213);
+  color: rgba(215, 235, 244, 0.8);
   font-weight: bolder;
   font-size: 25px;
   display: inline-block;
   margin-left: 30px;
   margin-top: 15px;
-  border: 2px solid white;
   border-radius: 12px;
   padding: 10px;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.468);
 }

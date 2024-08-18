@@ -9,7 +9,7 @@ export default function Weather() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState();
   const [error, setError] = useState("");
-  const API_KEY = "91ea4def39355c63a98365d31c7b7268";
+  const API_KEY = "45ea712dd72e9edddc5bee5a5cacd8f0";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`;
 
   function handleOnChange(e) {
@@ -24,6 +24,7 @@ export default function Weather() {
         setWeather(output);
         setError("");
       } else {
+        setWeather("");
         setError("No data found. Enter valid City name");
       }
     } catch (error) {}
@@ -58,7 +59,7 @@ export default function Weather() {
 
           <div className={styles.weatherTemp}>
             {weather.main.temp}
-            <span>&deg;C</span>
+            <span> &deg;C</span>
           </div>
 
           <div className={styles.weatherCity}>

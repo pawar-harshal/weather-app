@@ -1,11 +1,17 @@
 .container {
   width: 450px;
   height: auto;
-  background-color: rgba(209, 230, 239, 0.781);
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.235);
+  background: linear-gradient(
+    180deg,
+    rgba(40, 38, 38, 0.688),
+    rgba(62, 61, 61, 0.607)
+  );
+  position: relative;
+  z-index: 10;
   border-radius: 20px;
   margin: 0px auto;
   padding-bottom: 40px;
+  box-shadow: 0px 0px 10px rgba(15, 15, 15, 0.74);
 }
 .city {
   display: flex;
@@ -25,7 +31,11 @@
   font-weight: 700;
   font-size: 18px;
   padding-left: 20px;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.235);
+  background-color: rgba(12, 12, 12, 0.174);
+  color: rgba(255, 255, 255, 0.749);
+}
+.city input:hover {
+  box-shadow: 0px 0px 5px rgba(45, 192, 255, 0.673);
 }
 .city button {
   cursor: pointer;
@@ -34,17 +44,16 @@
   outline: none;
   border: none;
   font-size: 15px;
-  background-color: white;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.235);
+  background-color: rgba(12, 12, 12, 0.174);
 }
 .city button:hover {
-  background-color: rgb(66, 167, 250);
-  color: white;
+  box-shadow: 0px 0px 5px rgba(45, 192, 255, 0.673);
+  color: rgb(252, 254, 255);
   transition: all ease-in-out 2;
 }
 .locIcon {
   margin-right: 5px;
-  color: rgb(235, 120, 120);
+  color: rgb(228, 74, 74);
 }
 .errorMessage {
   display: flex;
@@ -59,9 +68,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 .weatherImage {
   margin-top: 15px;
+  font-size: 30px;
 }
 .desc {
   text-transform: capitalize;
@@ -72,7 +83,7 @@
   font-size: 70px;
   font-weight: bold;
   margin-top: 25px;
-  color: rgb(66, 167, 250);
+  color: rgb(255, 255, 255);
   text-shadow: 2px 4px 8px rgba(109, 107, 107, 0.235);
 }
 .weatherTemp span {
@@ -84,6 +95,7 @@
   font-size: 30px;
   font-weight: bold;
   margin-top: 25px;
+  color: white;
 }
 
 .weatherStats {
@@ -99,14 +111,14 @@
   align-items: center;
   padding: 10px;
   border-radius: 12px;
-  height: 160px;
-  width: 160px;
+  height: 145px;
+  width: 145px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.235);
-  background-color: rgb(66, 167, 250);
+  background-color: rgba(66, 167, 250, 0.514);
 }
 .winds > h3 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
 }
 .ws {
   font-weight: bold;
@@ -119,7 +131,7 @@
   color: rgb(255, 255, 255);
 }
 .humidityIcon {
-  font-size: 50px;
+  font-size: 55px;
   color: rgb(255, 255, 255);
 }
 .humidity {
@@ -129,18 +141,23 @@
   align-items: center;
   padding: 10px;
   border-radius: 12px;
-  height: 160px;
-  width: 160px;
+  height: 145px;
+  width: 145px;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.235);
-  background-color: rgb(66, 167, 250);
+  background-color: rgba(66, 167, 250, 0.514);
 }
 .humidity > h3 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
 }
 .hy {
   font-weight: bold;
   color: white;
   margin-top: 5px;
   font-size: 20px;
+}
+
+.winds:hover,
+.humidity:hover {
+  box-shadow: 0px 0px 30px rgba(45, 192, 255, 0.062);
 }
